@@ -3,9 +3,9 @@ import Foundation
 protocol CalendarProtocolIn {
     
     func getCalendarDate()
-    func addNewDate(with date: DateComponents)
+    func addNewDate(with date: Set<DateComponents>)
     func removeDate(with date: DateComponents)
-    func sentData(with array: [DateComponents])
+    func sentData()
     
 }
 
@@ -29,10 +29,14 @@ final class CalendarViewModel: CalendarProtocolOut {
         return formatter
     }()
     
-    private var dateStringArray = [
-        "2023-10-26",
-        "2023-10-27",
-        "2023-10-30",
+    //TODO: выбираются через кнопку все даты месяца включая прошедшие? проблема ли это вообще?
+    /// что делать с датами прошлых месяцев сохраненных в системе
+    ///  можно сделать очищение массива если больше чем (текущий месяц - 3 месяца) если да то удалять
+    ///   а по сути эти данные лежат на сервере и это их вопрос, а не мой
+    private var dateStringArray: Set<String> = [
+//        "2023-12-26",
+//        "2023-12-27",
+//        "2023-12-30",
     ]
     
 }
@@ -41,16 +45,16 @@ final class CalendarViewModel: CalendarProtocolOut {
 
 extension CalendarViewModel: CalendarProtocolIn {
     
-    func sentData(with array: [DateComponents]) {
-        var newArray = [String]()
+    /*
+     Можно сделать два массива, один временный, второй подтвержденный и сохранять в подтвержденный масив в какойнибудь Юзер дефолтс после того как нажмем кноку сохранить и отправим на сервер, до этого храним вов ременном массиве
+     */
+    func sentData() {
+        print(#function)
         
-        for element in array {
-            newArray.append(dateComponentsToString(dateComponents: element))
-        }
-        print(newArray)
-        print(newArray.count)
         //TODO: post request
-//        print(dateStringArray)
+        /*
+         нужно отправить массив dateStringArray
+         */
     }
 
     func getCalendarDate() {
@@ -59,10 +63,11 @@ extension CalendarViewModel: CalendarProtocolIn {
         }
     }
     
-    func addNewDate(with date: DateComponents) {
-        let date = dateComponentsToString(dateComponents: date)
+    func addNewDate(with date: Set<DateComponents>) {
+        for element in date {
+            dateStringArray.insert(dateComponentsToString(dateComponents: element))
+        }
         
-        dateStringArray.append(date)
         updateDate()
     }
     
@@ -84,7 +89,7 @@ extension CalendarViewModel: CalendarProtocolIn {
 
 private extension CalendarViewModel {
     
-    func convertDateToCalendarFormat(dateStrings: [String]) -> [DateComponents] {
+    func convertDateToCalendarFormat(dateStrings: Set<String>) -> [DateComponents] {
         var dateComponentsArray: [DateComponents] = []
         
         for dateString in dateStrings {
