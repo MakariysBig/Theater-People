@@ -11,8 +11,6 @@
 		443B1F892B21BFF200BF8B9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B1F882B21BFF200BF8B9A /* SceneDelegate.swift */; };
 		443B1F902B21BFF300BF8B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */; };
 		443B1F932B21BFF300BF8B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B1F912B21BFF300BF8B9A /* LaunchScreen.storyboard */; };
-		443B1FAD2B21E9B900BF8B9A /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */; };
-		443B1FAE2B21E9B900BF8B9A /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		443B20582B21F03200BF8B9A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20572B21F03200BF8B9A /* AppCoordinator.swift */; };
 		443B205E2B21F04500BF8B9A /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205A2B21F04500BF8B9A /* TabBarCoordinator.swift */; };
 		443B205F2B21F04500BF8B9A /* AccountSettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205B2B21F04500BF8B9A /* AccountSettingsCoordinator.swift */; };
@@ -26,17 +24,10 @@
 		443B20702B21F09800BF8B9A /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B206E2B21F09800BF8B9A /* AccountViewModel.swift */; };
 		443B20732B21F0A100BF8B9A /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20712B21F0A100BF8B9A /* CalendarViewModel.swift */; };
 		443B20742B21F0A100BF8B9A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20722B21F0A100BF8B9A /* CalendarViewController.swift */; };
+		445D6DFA2B22115B003F1EA3 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445D6DF92B22115B003F1EA3 /* NetworkKit.framework */; };
+		445D6DFB2B22115B003F1EA3 /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 445D6DF92B22115B003F1EA3 /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFB42FF76316264C43A7DB7A /* Pods_TheatrePeople.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F194CBEEA4610D24A3F17044 /* Pods_TheatrePeople.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		443B1FAA2B21C2F800BF8B9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ABE2CCB12AD2D60100A70864;
-			remoteInfo = NetworkKit;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		443B1FAF2B21E9B900BF8B9A /* Embed Frameworks */ = {
@@ -45,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				443B1FAE2B21E9B900BF8B9A /* NetworkKit.framework in Embed Frameworks */,
+				445D6DFB2B22115B003F1EA3 /* NetworkKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +50,6 @@
 		443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443B1F922B21BFF300BF8B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B1F942B21BFF300BF8B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkKit.xcodeproj; path = ../NetworkKit/NetworkKit.xcodeproj; sourceTree = "<group>"; };
 		443B20572B21F03200BF8B9A /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		443B205A2B21F04500BF8B9A /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		443B205B2B21F04500BF8B9A /* AccountSettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsCoordinator.swift; sourceTree = "<group>"; };
@@ -73,6 +63,10 @@
 		443B206E2B21F09800BF8B9A /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		443B20712B21F0A100BF8B9A /* CalendarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		443B20722B21F0A100BF8B9A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		445D6DF92B22115B003F1EA3 /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A20E0D770321512626CD20F /* Pods-TheatrePeople.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheatrePeople.release.xcconfig"; path = "Target Support Files/Pods-TheatrePeople/Pods-TheatrePeople.release.xcconfig"; sourceTree = "<group>"; };
+		7D84BF9D15004E8F5E15893A /* Pods-TheatrePeople.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheatrePeople.debug.xcconfig"; path = "Target Support Files/Pods-TheatrePeople/Pods-TheatrePeople.debug.xcconfig"; sourceTree = "<group>"; };
+		F194CBEEA4610D24A3F17044 /* Pods_TheatrePeople.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheatrePeople.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443B1FAD2B21E9B900BF8B9A /* NetworkKit.framework in Frameworks */,
+				445D6DFA2B22115B003F1EA3 /* NetworkKit.framework in Frameworks */,
+				BFB42FF76316264C43A7DB7A /* Pods_TheatrePeople.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +87,8 @@
 			children = (
 				443B1F852B21BFF200BF8B9A /* TheatrePeople */,
 				443B1F842B21BFF200BF8B9A /* Products */,
-				443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */,
+				76C4FF8AA2381C938AE8ED57 /* Pods */,
+				E3EDFC0FF7EB09BB91ED8202 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,14 +111,6 @@
 				443B20062B21EF7300BF8B9A /* Resources */,
 			);
 			path = TheatrePeople;
-			sourceTree = "<group>";
-		};
-		443B1FA72B21C2F800BF8B9A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		443B1FB52B21EC4600BF8B9A /* Aplication */ = {
@@ -217,6 +205,24 @@
 			name = AccountScreen;
 			sourceTree = "<group>";
 		};
+		76C4FF8AA2381C938AE8ED57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D84BF9D15004E8F5E15893A /* Pods-TheatrePeople.debug.xcconfig */,
+				4A20E0D770321512626CD20F /* Pods-TheatrePeople.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3EDFC0FF7EB09BB91ED8202 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				445D6DF92B22115B003F1EA3 /* NetworkKit.framework */,
+				F194CBEEA4610D24A3F17044 /* Pods_TheatrePeople.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,10 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 443B1F972B21BFF300BF8B9A /* Build configuration list for PBXNativeTarget "TheatrePeople" */;
 			buildPhases = (
+				4E181F37BEC82D3ABD5CB0A8 /* [CP] Check Pods Manifest.lock */,
 				443B1F7F2B21BFF200BF8B9A /* Sources */,
 				443B1F802B21BFF200BF8B9A /* Frameworks */,
 				443B1F812B21BFF200BF8B9A /* Resources */,
 				443B1FAF2B21E9B900BF8B9A /* Embed Frameworks */,
+				14E3B5BC5E371882BD73F429 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,28 +272,12 @@
 			mainGroup = 443B1F7A2B21BFF200BF8B9A;
 			productRefGroup = 443B1F842B21BFF200BF8B9A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 443B1FA72B21C2F800BF8B9A /* Products */;
-					ProjectRef = 443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				443B1F822B21BFF200BF8B9A /* TheatrePeople */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NetworkKit.framework;
-			remoteRef = 443B1FAA2B21C2F800BF8B9A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		443B1F812B21BFF200BF8B9A /* Resources */ = {
@@ -298,6 +290,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14E3B5BC5E371882BD73F429 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheatrePeople/Pods-TheatrePeople-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TheatrePeople/Pods-TheatrePeople-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheatrePeople/Pods-TheatrePeople-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E181F37BEC82D3ABD5CB0A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheatrePeople-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		443B1F7F2B21BFF200BF8B9A /* Sources */ = {
@@ -452,6 +486,7 @@
 		};
 		443B1F982B21BFF300BF8B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D84BF9D15004E8F5E15893A /* Pods-TheatrePeople.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +514,7 @@
 		};
 		443B1F992B21BFF300BF8B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A20E0D770321512626CD20F /* Pods-TheatrePeople.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
