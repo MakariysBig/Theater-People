@@ -1,8 +1,10 @@
 import UIKit
+import SnapKit
+import NetworkKit
 
 final class CalendarViewController: UIViewController {
     
-    // MARK: - Internal Dependancy
+    // MARK: - Internal Dependance
     
     private let viewModel: CalendarViewModel
         
@@ -80,27 +82,27 @@ private extension CalendarViewController {
     func setupLayout() {
         [mainLabel, calendarView, sentButton, selectMonthButton].forEach { view.addSubview($0) }
         
-//        mainLabel.snp.makeConstraints {
-//            $0.top.equalToSuperview().offset(80)
-//            $0.leading.trailing.equalToSuperview().inset(12)
-//        }
-//        
-//        calendarView.snp.makeConstraints {
-//            $0.top.equalTo(mainLabel.snp.bottom).offset(40)
-//            $0.leading.trailing.equalToSuperview()
-//        }
-//        
-//        sentButton.snp.makeConstraints {
-//            $0.top.equalTo(calendarView.snp.bottom).offset(40)
-//            $0.leading.trailing.equalToSuperview().inset(100)
-//            $0.height.equalTo(60)
-//        }
-//        
-//        selectMonthButton.snp.makeConstraints {
-//            $0.top.equalTo(sentButton.snp.bottom).offset(40)
-//            $0.leading.trailing.equalToSuperview().inset(100)
-//            $0.height.equalTo(60)
-//        }
+        mainLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(80)
+            $0.leading.trailing.equalToSuperview().inset(12)
+        }
+        
+        calendarView.snp.makeConstraints {
+            $0.top.equalTo(mainLabel.snp.bottom).offset(40)
+            $0.leading.trailing.equalToSuperview()
+        }
+        
+        sentButton.snp.makeConstraints {
+            $0.top.equalTo(calendarView.snp.bottom).offset(40)
+            $0.leading.trailing.equalToSuperview().inset(100)
+            $0.height.equalTo(60)
+        }
+        
+        selectMonthButton.snp.makeConstraints {
+            $0.top.equalTo(sentButton.snp.bottom).offset(40)
+            $0.leading.trailing.equalToSuperview().inset(100)
+            $0.height.equalTo(60)
+        }
     }
 
     func setupSelectedDateToCalendar(date: [DateComponents]) {
@@ -118,53 +120,45 @@ private extension CalendarViewController {
     
     @objc
     func sentButtonWasTapped() {
-//        viewModel.sentData()
+        viewModel.sentData()
     }
     
+    
+    // TODO: проблема с тем, что месяц выбирается, тот который текущий, а не тот который отображен на экране
     @objc
     func selectMonthButtonWasTapped() {
-            let currentDate = Date()
-            let calendar = Calendar.current
-            
-            // Определите первый и последний день текущего месяца
-
-            let firstDayComponents = calendar.dateComponents([.year, .month], from: currentDate)
-            guard let firstDay = calendar.date(from: firstDayComponents),
-                  let lastDay = calendar.date(byAdding: DateComponents(month: 1, day: -1), to: firstDay) else {
-                return
-            }
+        let currentDate = Date()
+        let calendar = Calendar.current
+        
+        // Определите первый и последний день текущего месяца
+        
+        let firstDayComponents = calendar.dateComponents([.year, .month], from: currentDate)
+        guard let firstDay = calendar.date(from: firstDayComponents),
+              let lastDay = calendar.date(byAdding: DateComponents(month: 1, day: -1), to: firstDay) else {
+            return
+        }
         let dateFormatter = DateFormatter()
-          dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss Z" // Формат, который вы хотите отобразить
-          dateFormatter.timeZone = TimeZone.current // Используйте текущий часовой пояс
-
-          print(dateFormatter.string(from: firstDay))
-          print(dateFormatter.string(from: lastDay))
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss Z" // Формат, который вы хотите отобразить
+        dateFormatter.timeZone = TimeZone.current // Используйте текущий часовой пояс
+        
+        print(dateFormatter.string(from: firstDay))
+        print(dateFormatter.string(from: lastDay))
         
         // Включите первый день месяца в массив dateComponentsArray
-            var dateComponentsArray: [DateComponents] = []
-            let components = calendar.dateComponents([.year, .month, .day], from: firstDay)
-            dateComponentsArray.append(components)
-
-            // Создайте массив DateComponents для всех дней в текущем месяце
-//            var dateComponentsArray: [DateComponents] = []
-            calendar.enumerateDates(startingAfter: firstDay, matching: DateComponents(hour: 0, minute: 0, second: 0), matchingPolicy: .nextTime) { (date, _, stop) in
-                if let date = date, date <= lastDay {
-                    let components = calendar.dateComponents([.year, .month, .day], from: date)
-                    dateComponentsArray.append(components)
-                } else {
-                    stop = true
-                }
+        var dateComponentsArray: Set<DateComponents> = []
+        let components = calendar.dateComponents([.year, .month, .day], from: firstDay)
+        dateComponentsArray.insert(components)
+        
+        calendar.enumerateDates(startingAfter: firstDay, matching: DateComponents(hour: 0, minute: 0, second: 0), matchingPolicy: .nextTime) { (date, _, stop) in
+            if let date = date, date <= lastDay {
+                let components = calendar.dateComponents([.year, .month, .day], from: date)
+                dateComponentsArray.insert(components)
+            } else {
+                stop = true
             }
-            
-            // Преобразуйте DateComponents в строки, если это необходимо
-            print(dateComponentsArray.count)
-//            let dateStringArray = dateComponentsArray.map { dateComponentsToString(dateComponents: $0) }
-                viewModel.sentData(with: dateComponentsArray)
-
-            // Обновите массив dateStringArray и вызовите updateCalendarData
-//            self.dateStringArray = dateStringArray
+        }
         
-        
+        viewModel.addNewDate(with: dateComponentsArray)
     }
     
     // MARK: - Binding
@@ -188,7 +182,7 @@ extension CalendarViewController: UICalendarSelectionMultiDateDelegate {
     /// add new date to array
     func multiDateSelection(_ selection: UICalendarSelectionMultiDate, didSelectDate dateComponents: DateComponents) {
         let date = getDate(with: dateComponents)
-        viewModel.addNewDate(with: dateComponents)
+        viewModel.addNewDate(with: [dateComponents])
     }
     
     /// remove date from array
