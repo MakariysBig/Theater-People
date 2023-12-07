@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		443B1F872B21BFF200BF8B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B1F862B21BFF200BF8B9A /* AppDelegate.swift */; };
 		443B1F892B21BFF200BF8B9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B1F882B21BFF200BF8B9A /* SceneDelegate.swift */; };
-		443B1F8B2B21BFF200BF8B9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B1F8A2B21BFF200BF8B9A /* ViewController.swift */; };
-		443B1F8E2B21BFF200BF8B9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B1F8C2B21BFF200BF8B9A /* Main.storyboard */; };
 		443B1F902B21BFF300BF8B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */; };
 		443B1F932B21BFF300BF8B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B1F912B21BFF300BF8B9A /* LaunchScreen.storyboard */; };
 		443B1FAD2B21E9B900BF8B9A /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */; };
 		443B1FAE2B21E9B900BF8B9A /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		443B20582B21F03200BF8B9A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20572B21F03200BF8B9A /* AppCoordinator.swift */; };
+		443B205E2B21F04500BF8B9A /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205A2B21F04500BF8B9A /* TabBarCoordinator.swift */; };
+		443B205F2B21F04500BF8B9A /* AccountSettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205B2B21F04500BF8B9A /* AccountSettingsCoordinator.swift */; };
+		443B20602B21F04500BF8B9A /* EventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205C2B21F04500BF8B9A /* EventCoordinator.swift */; };
+		443B20612B21F04500BF8B9A /* CalendarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205D2B21F04500BF8B9A /* CalendarCoordinator.swift */; };
+		443B20632B21F05100BF8B9A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20622B21F05100BF8B9A /* Entity.swift */; };
+		443B20652B21F05800BF8B9A /* UITabBarItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20642B21F05800BF8B9A /* UITabBarItem+Extension.swift */; };
+		443B20692B21F06B00BF8B9A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20672B21F06B00BF8B9A /* EventViewController.swift */; };
+		443B206A2B21F06B00BF8B9A /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20682B21F06B00BF8B9A /* EventViewModel.swift */; };
+		443B206F2B21F09800BF8B9A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B206D2B21F09800BF8B9A /* AccountViewController.swift */; };
+		443B20702B21F09800BF8B9A /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B206E2B21F09800BF8B9A /* AccountViewModel.swift */; };
+		443B20732B21F0A100BF8B9A /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20712B21F0A100BF8B9A /* CalendarViewModel.swift */; };
+		443B20742B21F0A100BF8B9A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20722B21F0A100BF8B9A /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +56,23 @@
 		443B1F832B21BFF200BF8B9A /* TheatrePeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheatrePeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443B1F862B21BFF200BF8B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443B1F882B21BFF200BF8B9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		443B1F8A2B21BFF200BF8B9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		443B1F8D2B21BFF200BF8B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443B1F922B21BFF300BF8B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443B1F942B21BFF300BF8B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkKit.xcodeproj; path = ../NetworkKit/NetworkKit.xcodeproj; sourceTree = "<group>"; };
+		443B20572B21F03200BF8B9A /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		443B205A2B21F04500BF8B9A /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		443B205B2B21F04500BF8B9A /* AccountSettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsCoordinator.swift; sourceTree = "<group>"; };
+		443B205C2B21F04500BF8B9A /* EventCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCoordinator.swift; sourceTree = "<group>"; };
+		443B205D2B21F04500BF8B9A /* CalendarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCoordinator.swift; sourceTree = "<group>"; };
+		443B20622B21F05100BF8B9A /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		443B20642B21F05800BF8B9A /* UITabBarItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Extension.swift"; sourceTree = "<group>"; };
+		443B20672B21F06B00BF8B9A /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		443B20682B21F06B00BF8B9A /* EventViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		443B206D2B21F09800BF8B9A /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		443B206E2B21F09800BF8B9A /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		443B20712B21F0A100BF8B9A /* CalendarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		443B20722B21F0A100BF8B9A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +107,12 @@
 		443B1F852B21BFF200BF8B9A /* TheatrePeople */ = {
 			isa = PBXGroup;
 			children = (
-				443B1F862B21BFF200BF8B9A /* AppDelegate.swift */,
-				443B1F882B21BFF200BF8B9A /* SceneDelegate.swift */,
-				443B1F8A2B21BFF200BF8B9A /* ViewController.swift */,
-				443B1F8C2B21BFF200BF8B9A /* Main.storyboard */,
-				443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */,
-				443B1F912B21BFF300BF8B9A /* LaunchScreen.storyboard */,
-				443B1F942B21BFF300BF8B9A /* Info.plist */,
+				443B1FB52B21EC4600BF8B9A /* Aplication */,
+				443B200A2B21EFBF00BF8B9A /* Coordinators */,
+				443B20092B21EFB500BF8B9A /* Entity */,
+				443B20082B21EFAC00BF8B9A /* Extensions */,
+				443B20072B21EF9600BF8B9A /* Sources */,
+				443B20062B21EF7300BF8B9A /* Resources */,
 			);
 			path = TheatrePeople;
 			sourceTree = "<group>";
@@ -102,6 +123,98 @@
 				443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		443B1FB52B21EC4600BF8B9A /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				443B1F862B21BFF200BF8B9A /* AppDelegate.swift */,
+				443B1F882B21BFF200BF8B9A /* SceneDelegate.swift */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		443B20062B21EF7300BF8B9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */,
+				443B1F912B21BFF300BF8B9A /* LaunchScreen.storyboard */,
+				443B1F942B21BFF300BF8B9A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		443B20072B21EF9600BF8B9A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				443B206B2B21F06F00BF8B9A /* CalendarModule */,
+				443B20662B21F05E00BF8B9A /* EventScreen */,
+				443B206C2B21F08400BF8B9A /* AccountScreen */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		443B20082B21EFAC00BF8B9A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				443B20642B21F05800BF8B9A /* UITabBarItem+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		443B20092B21EFB500BF8B9A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				443B20622B21F05100BF8B9A /* Entity.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		443B200A2B21EFBF00BF8B9A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				443B20572B21F03200BF8B9A /* AppCoordinator.swift */,
+				443B20592B21F03900BF8B9A /* TabBarCoordinator */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		443B20592B21F03900BF8B9A /* TabBarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				443B205B2B21F04500BF8B9A /* AccountSettingsCoordinator.swift */,
+				443B205D2B21F04500BF8B9A /* CalendarCoordinator.swift */,
+				443B205C2B21F04500BF8B9A /* EventCoordinator.swift */,
+				443B205A2B21F04500BF8B9A /* TabBarCoordinator.swift */,
+			);
+			name = TabBarCoordinator;
+			sourceTree = "<group>";
+		};
+		443B20662B21F05E00BF8B9A /* EventScreen */ = {
+			isa = PBXGroup;
+			children = (
+				443B20672B21F06B00BF8B9A /* EventViewController.swift */,
+				443B20682B21F06B00BF8B9A /* EventViewModel.swift */,
+			);
+			name = EventScreen;
+			sourceTree = "<group>";
+		};
+		443B206B2B21F06F00BF8B9A /* CalendarModule */ = {
+			isa = PBXGroup;
+			children = (
+				443B20722B21F0A100BF8B9A /* CalendarViewController.swift */,
+				443B20712B21F0A100BF8B9A /* CalendarViewModel.swift */,
+			);
+			name = CalendarModule;
+			sourceTree = "<group>";
+		};
+		443B206C2B21F08400BF8B9A /* AccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				443B206D2B21F09800BF8B9A /* AccountViewController.swift */,
+				443B206E2B21F09800BF8B9A /* AccountViewModel.swift */,
+			);
+			name = AccountScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +294,6 @@
 			files = (
 				443B1F932B21BFF300BF8B9A /* LaunchScreen.storyboard in Resources */,
 				443B1F902B21BFF300BF8B9A /* Assets.xcassets in Resources */,
-				443B1F8E2B21BFF200BF8B9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +304,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443B1F8B2B21BFF200BF8B9A /* ViewController.swift in Sources */,
+				443B20742B21F0A100BF8B9A /* CalendarViewController.swift in Sources */,
+				443B20582B21F03200BF8B9A /* AppCoordinator.swift in Sources */,
+				443B20612B21F04500BF8B9A /* CalendarCoordinator.swift in Sources */,
+				443B206F2B21F09800BF8B9A /* AccountViewController.swift in Sources */,
+				443B20652B21F05800BF8B9A /* UITabBarItem+Extension.swift in Sources */,
+				443B206A2B21F06B00BF8B9A /* EventViewModel.swift in Sources */,
+				443B205F2B21F04500BF8B9A /* AccountSettingsCoordinator.swift in Sources */,
+				443B20732B21F0A100BF8B9A /* CalendarViewModel.swift in Sources */,
 				443B1F872B21BFF200BF8B9A /* AppDelegate.swift in Sources */,
+				443B20692B21F06B00BF8B9A /* EventViewController.swift in Sources */,
+				443B20632B21F05100BF8B9A /* Entity.swift in Sources */,
+				443B20602B21F04500BF8B9A /* EventCoordinator.swift in Sources */,
+				443B205E2B21F04500BF8B9A /* TabBarCoordinator.swift in Sources */,
+				443B20702B21F09800BF8B9A /* AccountViewModel.swift in Sources */,
 				443B1F892B21BFF200BF8B9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,14 +325,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		443B1F8C2B21BFF200BF8B9A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				443B1F8D2B21BFF200BF8B9A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		443B1F912B21BFF300BF8B9A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,7 +461,6 @@
 				INFOPLIST_FILE = TheatrePeople/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -373,7 +488,6 @@
 				INFOPLIST_FILE = TheatrePeople/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
