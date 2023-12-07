@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		443B1F872B21BFF200BF8B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B1F862B21BFF200BF8B9A /* AppDelegate.swift */; };
+		443B1F892B21BFF200BF8B9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B1F882B21BFF200BF8B9A /* SceneDelegate.swift */; };
+		443B1F902B21BFF300BF8B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */; };
+		443B1F932B21BFF300BF8B9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443B1F912B21BFF300BF8B9A /* LaunchScreen.storyboard */; };
+		443B1FAD2B21E9B900BF8B9A /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */; };
+		443B1FAE2B21E9B900BF8B9A /* NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		443B20582B21F03200BF8B9A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20572B21F03200BF8B9A /* AppCoordinator.swift */; };
+		443B205E2B21F04500BF8B9A /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205A2B21F04500BF8B9A /* TabBarCoordinator.swift */; };
+		443B205F2B21F04500BF8B9A /* AccountSettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205B2B21F04500BF8B9A /* AccountSettingsCoordinator.swift */; };
+		443B20602B21F04500BF8B9A /* EventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205C2B21F04500BF8B9A /* EventCoordinator.swift */; };
+		443B20612B21F04500BF8B9A /* CalendarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B205D2B21F04500BF8B9A /* CalendarCoordinator.swift */; };
+		443B20632B21F05100BF8B9A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20622B21F05100BF8B9A /* Entity.swift */; };
+		443B20652B21F05800BF8B9A /* UITabBarItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20642B21F05800BF8B9A /* UITabBarItem+Extension.swift */; };
+		443B20692B21F06B00BF8B9A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20672B21F06B00BF8B9A /* EventViewController.swift */; };
+		443B206A2B21F06B00BF8B9A /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20682B21F06B00BF8B9A /* EventViewModel.swift */; };
+		443B206F2B21F09800BF8B9A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B206D2B21F09800BF8B9A /* AccountViewController.swift */; };
+		443B20702B21F09800BF8B9A /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B206E2B21F09800BF8B9A /* AccountViewModel.swift */; };
+		443B20732B21F0A100BF8B9A /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20712B21F0A100BF8B9A /* CalendarViewModel.swift */; };
+		443B20742B21F0A100BF8B9A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443B20722B21F0A100BF8B9A /* CalendarViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		443B1FAA2B21C2F800BF8B9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABE2CCB12AD2D60100A70864;
+			remoteInfo = NetworkKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		443B1FAF2B21E9B900BF8B9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				443B1FAE2B21E9B900BF8B9A /* NetworkKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		443B1F832B21BFF200BF8B9A /* TheatrePeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheatrePeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		443B1F862B21BFF200BF8B9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		443B1F882B21BFF200BF8B9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		443B1F922B21BFF300BF8B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		443B1F942B21BFF300BF8B9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkKit.xcodeproj; path = ../NetworkKit/NetworkKit.xcodeproj; sourceTree = "<group>"; };
+		443B20572B21F03200BF8B9A /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		443B205A2B21F04500BF8B9A /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		443B205B2B21F04500BF8B9A /* AccountSettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsCoordinator.swift; sourceTree = "<group>"; };
+		443B205C2B21F04500BF8B9A /* EventCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCoordinator.swift; sourceTree = "<group>"; };
+		443B205D2B21F04500BF8B9A /* CalendarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCoordinator.swift; sourceTree = "<group>"; };
+		443B20622B21F05100BF8B9A /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		443B20642B21F05800BF8B9A /* UITabBarItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Extension.swift"; sourceTree = "<group>"; };
+		443B20672B21F06B00BF8B9A /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		443B20682B21F06B00BF8B9A /* EventViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		443B206D2B21F09800BF8B9A /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		443B206E2B21F09800BF8B9A /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		443B20712B21F0A100BF8B9A /* CalendarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		443B20722B21F0A100BF8B9A /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		443B1F802B21BFF200BF8B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443B1FAD2B21E9B900BF8B9A /* NetworkKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		443B1F7A2B21BFF200BF8B9A = {
+			isa = PBXGroup;
+			children = (
+				443B1F852B21BFF200BF8B9A /* TheatrePeople */,
+				443B1F842B21BFF200BF8B9A /* Products */,
+				443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		443B1F842B21BFF200BF8B9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				443B1F832B21BFF200BF8B9A /* TheatrePeople.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		443B1F852B21BFF200BF8B9A /* TheatrePeople */ = {
+			isa = PBXGroup;
+			children = (
+				443B1FB52B21EC4600BF8B9A /* Aplication */,
+				443B200A2B21EFBF00BF8B9A /* Coordinators */,
+				443B20092B21EFB500BF8B9A /* Entity */,
+				443B20082B21EFAC00BF8B9A /* Extensions */,
+				443B20072B21EF9600BF8B9A /* Sources */,
+				443B20062B21EF7300BF8B9A /* Resources */,
+			);
+			path = TheatrePeople;
+			sourceTree = "<group>";
+		};
+		443B1FA72B21C2F800BF8B9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		443B1FB52B21EC4600BF8B9A /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				443B1F862B21BFF200BF8B9A /* AppDelegate.swift */,
+				443B1F882B21BFF200BF8B9A /* SceneDelegate.swift */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		443B20062B21EF7300BF8B9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				443B1F8F2B21BFF300BF8B9A /* Assets.xcassets */,
+				443B1F912B21BFF300BF8B9A /* LaunchScreen.storyboard */,
+				443B1F942B21BFF300BF8B9A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		443B20072B21EF9600BF8B9A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				443B206B2B21F06F00BF8B9A /* CalendarModule */,
+				443B20662B21F05E00BF8B9A /* EventScreen */,
+				443B206C2B21F08400BF8B9A /* AccountScreen */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		443B20082B21EFAC00BF8B9A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				443B20642B21F05800BF8B9A /* UITabBarItem+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		443B20092B21EFB500BF8B9A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				443B20622B21F05100BF8B9A /* Entity.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		443B200A2B21EFBF00BF8B9A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				443B20572B21F03200BF8B9A /* AppCoordinator.swift */,
+				443B20592B21F03900BF8B9A /* TabBarCoordinator */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		443B20592B21F03900BF8B9A /* TabBarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				443B205B2B21F04500BF8B9A /* AccountSettingsCoordinator.swift */,
+				443B205D2B21F04500BF8B9A /* CalendarCoordinator.swift */,
+				443B205C2B21F04500BF8B9A /* EventCoordinator.swift */,
+				443B205A2B21F04500BF8B9A /* TabBarCoordinator.swift */,
+			);
+			name = TabBarCoordinator;
+			sourceTree = "<group>";
+		};
+		443B20662B21F05E00BF8B9A /* EventScreen */ = {
+			isa = PBXGroup;
+			children = (
+				443B20672B21F06B00BF8B9A /* EventViewController.swift */,
+				443B20682B21F06B00BF8B9A /* EventViewModel.swift */,
+			);
+			name = EventScreen;
+			sourceTree = "<group>";
+		};
+		443B206B2B21F06F00BF8B9A /* CalendarModule */ = {
+			isa = PBXGroup;
+			children = (
+				443B20722B21F0A100BF8B9A /* CalendarViewController.swift */,
+				443B20712B21F0A100BF8B9A /* CalendarViewModel.swift */,
+			);
+			name = CalendarModule;
+			sourceTree = "<group>";
+		};
+		443B206C2B21F08400BF8B9A /* AccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				443B206D2B21F09800BF8B9A /* AccountViewController.swift */,
+				443B206E2B21F09800BF8B9A /* AccountViewModel.swift */,
+			);
+			name = AccountScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		443B1F822B21BFF200BF8B9A /* TheatrePeople */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443B1F972B21BFF300BF8B9A /* Build configuration list for PBXNativeTarget "TheatrePeople" */;
+			buildPhases = (
+				443B1F7F2B21BFF200BF8B9A /* Sources */,
+				443B1F802B21BFF200BF8B9A /* Frameworks */,
+				443B1F812B21BFF200BF8B9A /* Resources */,
+				443B1FAF2B21E9B900BF8B9A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheatrePeople;
+			productName = TheatrePeople;
+			productReference = 443B1F832B21BFF200BF8B9A /* TheatrePeople.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		443B1F7B2B21BFF200BF8B9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					443B1F822B21BFF200BF8B9A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 443B1F7E2B21BFF200BF8B9A /* Build configuration list for PBXProject "TheatrePeople" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 443B1F7A2B21BFF200BF8B9A;
+			productRefGroup = 443B1F842B21BFF200BF8B9A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 443B1FA72B21C2F800BF8B9A /* Products */;
+					ProjectRef = 443B1FA62B21C2F800BF8B9A /* NetworkKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				443B1F822B21BFF200BF8B9A /* TheatrePeople */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		443B1FAB2B21C2F800BF8B9A /* NetworkKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NetworkKit.framework;
+			remoteRef = 443B1FAA2B21C2F800BF8B9A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		443B1F812B21BFF200BF8B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443B1F932B21BFF300BF8B9A /* LaunchScreen.storyboard in Resources */,
+				443B1F902B21BFF300BF8B9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		443B1F7F2B21BFF200BF8B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443B20742B21F0A100BF8B9A /* CalendarViewController.swift in Sources */,
+				443B20582B21F03200BF8B9A /* AppCoordinator.swift in Sources */,
+				443B20612B21F04500BF8B9A /* CalendarCoordinator.swift in Sources */,
+				443B206F2B21F09800BF8B9A /* AccountViewController.swift in Sources */,
+				443B20652B21F05800BF8B9A /* UITabBarItem+Extension.swift in Sources */,
+				443B206A2B21F06B00BF8B9A /* EventViewModel.swift in Sources */,
+				443B205F2B21F04500BF8B9A /* AccountSettingsCoordinator.swift in Sources */,
+				443B20732B21F0A100BF8B9A /* CalendarViewModel.swift in Sources */,
+				443B1F872B21BFF200BF8B9A /* AppDelegate.swift in Sources */,
+				443B20692B21F06B00BF8B9A /* EventViewController.swift in Sources */,
+				443B20632B21F05100BF8B9A /* Entity.swift in Sources */,
+				443B20602B21F04500BF8B9A /* EventCoordinator.swift in Sources */,
+				443B205E2B21F04500BF8B9A /* TabBarCoordinator.swift in Sources */,
+				443B20702B21F09800BF8B9A /* AccountViewModel.swift in Sources */,
+				443B1F892B21BFF200BF8B9A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		443B1F912B21BFF300BF8B9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				443B1F922B21BFF300BF8B9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		443B1F952B21BFF300BF8B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		443B1F962B21BFF300BF8B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		443B1F982B21BFF300BF8B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheatrePeople/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TheatrePeople";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		443B1F992B21BFF300BF8B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheatrePeople/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.TheatrePeople";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		443B1F7E2B21BFF200BF8B9A /* Build configuration list for PBXProject "TheatrePeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443B1F952B21BFF300BF8B9A /* Debug */,
+				443B1F962B21BFF300BF8B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443B1F972B21BFF300BF8B9A /* Build configuration list for PBXNativeTarget "TheatrePeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443B1F982B21BFF300BF8B9A /* Debug */,
+				443B1F992B21BFF300BF8B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 443B1F7B2B21BFF200BF8B9A /* Project object */;
+}
