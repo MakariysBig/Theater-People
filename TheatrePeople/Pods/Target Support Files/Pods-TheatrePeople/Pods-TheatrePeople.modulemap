@@ -1,0 +1,6 @@
+framework module Pods_TheatrePeople {
+  umbrella header "Pods-TheatrePeople-umbrella.h"
+
+  export *
+  module * { export * }
+}

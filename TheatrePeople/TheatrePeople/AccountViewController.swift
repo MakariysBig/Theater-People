@@ -1,5 +1,6 @@
 import UIKit
 import NetworkKit
+import SnapKit
 
 final class AccountViewController: UIViewController {
     private let funnyImage: UIImageView = {
@@ -37,9 +38,9 @@ final class AccountViewController: UIViewController {
     func setupFunnyImage() {
         view.addSubview(funnyImage)
         
-//        funnyImage.snp.makeConstraints {
-//            $0.edges.equalToSuperview()
-//        }
+        funnyImage.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 
 }
